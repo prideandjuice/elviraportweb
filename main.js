@@ -1,20 +1,8 @@
 // CONFIG sudah ada di config.js — edit di sana!
 
-// ── Dark mode ─────────────────────────────────────────────
-const darkToggle = document.getElementById("dark-toggle");
-const darkIcon = document.getElementById("dark-icon");
-const html = document.documentElement;
-
-function applyDark(on) {
-  html.classList.toggle("dark", on);
-  document.body.classList.toggle("dark", on);
-  darkIcon.className = on ? "fas fa-sun" : "fas fa-moon";
-  localStorage.setItem("dark", on ? "1" : "0");
-}
-applyDark(localStorage.getItem("dark") === "1");
-darkToggle.addEventListener("click", () =>
-  applyDark(!html.classList.contains("dark")),
-);
+// Dark mode permanen
+document.documentElement.classList.add("dark");
+document.body.classList.add("dark");
 
 // ── Static text ───────────────────────────────────────────
 document.getElementById("hero-name").textContent = CONFIG.name;

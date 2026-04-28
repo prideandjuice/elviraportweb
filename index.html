@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
   <div id="trail-container"></div>
 
   <!-- Navbar -->
-  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm transition-all">
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 md:px-8 py-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm transition-all">
     <a href="#home" id="nav-logo-link">
       <img id="nav-logo" src="" alt="Logo" class="h-10 w-auto object-contain">
     </a>
@@ -36,10 +36,7 @@
     </div>
 
     <div class="flex items-center gap-3">
-      <!-- Dark mode toggle -->
-      <button id="dark-toggle" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-500 dark:text-yellow-300 hover:scale-110 transition">
-        <i class="fas fa-moon" id="dark-icon"></i>
-      </button>
+      <!-- Dark mode toggle removed -->
       <a href="#contact" class="hidden md:block px-5 py-2 rounded-full bg-gradient-to-r from-blue-400 to-pink-400 text-white font-semibold hover:opacity-90 transition text-sm">Hire Me</a>
       <!-- Hamburger -->
       <button id="hamburger" class="md:hidden w-9 h-9 flex flex-col justify-center items-center gap-1.5">
@@ -66,7 +63,7 @@
       <div class="inline-flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-4 py-1 text-sm text-pink-500 font-medium shadow mb-6">
         <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> Available for work
       </div>
-      <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight text-gray-400 dark:text-gray-400">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight text-gray-400 dark:text-gray-400">
         Hi, I'm <span class="gradient-text" id="hero-name">[Elvira]</span>
       </h1>
 
@@ -84,18 +81,18 @@
       <div class="relative w-56 h-56 md:w-80 md:h-80">
         <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-200 to-pink-200 animate-pulse opacity-60"></div>
         <img id="hero-photo" src="assets/potoku.jpg" alt="Profile"
-          class="photo-tilt relative w-full h-full object-cover rounded-full border-8 border-white dark:border-gray-800 shadow-2xl z-10">
+          class="relative w-full h-full object-cover rounded-full border-8 border-white dark:border-gray-800 shadow-2xl z-10">
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="max-w-4xl mx-auto px-8 py-16 fade-in">
+  <section id="about" class="max-w-4xl mx-auto px-4 md:px-8 py-16 fade-in">
     <h2 class="text-3xl font-bold gradient-text mb-6">About Me</h2>
-    <div class="bg-white/80 dark:bg-gray-800/80 rounded-2xl shadow p-8">
+    <div class="bg-white/80 dark:bg-gray-800/80 rounded-2xl shadow p-5 md:p-8">
       <div class="mb-6">
         <p class="text-gray-400 dark:text-gray-500 text-sm mb-1">Medan, Indonesia</p>
-        <p id="live-clock" class="text-5xl font-light text-gray-800 dark:text-gray-100 tracking-tight"></p>
+        <p id="live-clock" class="text-4xl md:text-5xl font-light text-gray-800 dark:text-gray-100 tracking-tight"></p>
       </div>
       <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6" id="about-text"></p>
       <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4" id="about-stats"></div>
@@ -103,7 +100,7 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="max-w-5xl mx-auto px-8 py-16 fade-in">
+  <section id="projects" class="max-w-5xl mx-auto px-4 md:px-8 py-16 fade-in">
     <h2 class="text-3xl font-bold gradient-text mb-2">Projects</h2>
     <p class="text-gray-500 dark:text-gray-400 mb-6">Things I've built in highlights — IT and beyond.</p>
     <div class="flex gap-3 mb-8 flex-wrap">
@@ -115,14 +112,14 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="max-w-4xl mx-auto px-8 py-16 fade-in">
+  <section id="skills" class="max-w-4xl mx-auto px-4 md:px-8 py-16 fade-in">
     <h2 class="text-3xl font-bold gradient-text mb-2">Skills</h2>
     <p class="text-gray-500 dark:text-gray-400 mb-8">What I bring to the table.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="skills-grid"></div>
   </section>
 
   <!-- Experience -->
-  <section id="experience" class="max-w-3xl mx-auto px-8 py-16 fade-in">
+  <section id="experience" class="max-w-3xl mx-auto px-4 md:px-8 py-16 fade-in">
     <h2 class="text-3xl font-bold gradient-text mb-2">Experience</h2>
     <p class="text-gray-500 dark:text-gray-400 mb-10">My journey so far.</p>
     <div class="relative" id="timeline">
@@ -131,7 +128,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="max-w-2xl mx-auto px-8 py-16 fade-in">
+  <section id="contact" class="max-w-2xl mx-auto px-4 md:px-8 py-16 fade-in">
     <h2 class="text-3xl font-bold gradient-text mb-2">Contact</h2>
     <p class="text-gray-500 dark:text-gray-400 mb-8">Let's work together or just say hi!</p>
     <div class="bg-white/80 dark:bg-gray-800/80 rounded-2xl shadow p-8 flex flex-col gap-4" id="contact-links">
@@ -140,8 +137,7 @@
   </section>
 
   <footer class="text-center py-8 text-gray-400 text-sm">
-    &copy; <span id="footer-year"></span> <span id="footer-name"></span>.This portfolio and its contents may not be reproduced, distributed, or used
-in any form without the express written permission of the owner.
+    &copy; <span id="footer-year"></span> <span id="footer-name">
   </footer>
 
   <button id="back-to-top" title="Back to top"><i class="fa fa-arrow-up"></i></button>

@@ -36,18 +36,10 @@ function animateTrail() {
   requestAnimationFrame(animateTrail);
 }
 animateTrail();
-const html     = document.documentElement;
-const darkIcon = document.getElementById("dark-icon");
-function applyDark(on) {
-  html.classList.toggle("dark", on);
-  document.body.classList.toggle("dark", on);
-  darkIcon.className = on ? "fas fa-sun" : "fas fa-moon";
-  localStorage.setItem("dark", on ? "1" : "0");
-}
-applyDark(localStorage.getItem("dark") === "1");
-document.getElementById("dark-toggle").addEventListener("click", () =>
-  applyDark(!html.classList.contains("dark"))
-);
+
+// Dark mode permanen
+document.documentElement.classList.add("dark");
+document.body.classList.add("dark");
 
 // ── Footer ────────────────────────────────────────────────
 document.getElementById("footer-name").textContent = CONFIG.name;
