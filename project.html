@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Detail</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+  <script defer src="project.js"></script>
+</head>
+<body class="font-sans text-gray-800 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
+
+  <!-- Trailing Dots Cursor -->
+  <div id="trail-container"></div>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
+    <a href="index.html" class="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-blue-400 transition font-medium">
+      <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+    <button id="dark-toggle" class="w-9 h-9 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-500 dark:text-yellow-300 hover:scale-110 transition">
+      <i class="fas fa-moon" id="dark-icon"></i>
+    </button>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-8 pt-28 pb-20">
+
+    <!-- Hero image -->
+    <div class="w-full h-64 md:h-80 rounded-2xl overflow-hidden shadow-xl mb-8 bg-gradient-to-tr from-blue-100 to-pink-100 dark:from-blue-900/30 dark:to-pink-900/30 flex items-center justify-center" id="project-cover">
+      <i class="fas fa-image text-6xl text-gray-300 dark:text-gray-600"></i>
+    </div>
+
+    <!-- Header -->
+    <div class="flex flex-wrap items-start justify-between gap-4 mb-6">
+      <div>
+        <span id="project-category-badge" class="tag mb-3 inline-block"></span>
+        <h1 id="project-title" class="text-4xl font-extrabold text-gray-900 dark:text-white"></h1>
+      </div>
+      <a id="project-link" href="#" target="_blank"
+        class="px-6 py-3 rounded-full bg-gradient-to-r from-blue-400 to-pink-400 text-white font-semibold hover:opacity-90 transition shadow flex items-center gap-2">
+        <i class="fas fa-external-link-alt"></i> Visit Project
+      </a>
+    </div>
+
+    <!-- Tags -->
+    <div id="project-tags" class="flex flex-wrap gap-2 mb-8"></div>
+
+    <!-- Meta info -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10" id="project-meta"></div>
+
+    <!-- Description -->
+    <section class="mb-10">
+      <h2 class="text-xl font-bold gradient-text mb-3">About This Project</h2>
+      <div id="project-desc" class="text-gray-600 dark:text-gray-300 leading-relaxed text-lg"></div>
+    </section>
+
+    <!-- What I did -->
+    <section class="mb-10" id="section-highlights">
+      <h2 class="text-xl font-bold gradient-text mb-4">What I Did</h2>
+      <ul id="project-highlights" class="flex flex-col gap-3"></ul>
+    </section>
+
+    <!-- Gallery -->
+    <section id="section-gallery" class="mb-10 hidden">
+      <h2 class="text-xl font-bold gradient-text mb-4">Gallery</h2>
+      <div id="project-gallery" class="grid grid-cols-2 md:grid-cols-3 gap-4"></div>
+    </section>
+
+    <!-- Nav between projects -->
+    <div class="flex justify-between mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
+      <a id="prev-project" href="#" class="flex items-center gap-2 text-gray-500 hover:text-blue-400 transition font-medium">
+        <i class="fas fa-arrow-left"></i> Previous
+      </a>
+      <a id="next-project" href="#" class="flex items-center gap-2 text-gray-500 hover:text-pink-400 transition font-medium">
+        Next <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="text-center py-6 text-gray-400 text-sm">
+    &copy; <span id="footer-year"></span> <span id="footer-name"></span>. Made with ❤️
+  </footer>
+
+</body>
+</html>
